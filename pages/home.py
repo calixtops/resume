@@ -10,43 +10,7 @@ layout = html.Div([
 
 
 
-    dcc.Markdown('''# Pedro Silveira Calixto  [![Linkedin](https://img.shields.io/badge/-LINKEDIN-blue)](https://www.linkedin.com/in/calixtops/)''', style={'textAlign':'center','display':'inline'}),
-
-    # dcc.Markdown('''[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)(https://www.linkedin.com/in/calixtops/)] '''),
-    # dcc.Markdown('[!Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)(https://www.linkedin.com/in/calixtops/)'),
-
-    # html.Div([
-
-    # html.Div([
-
-    # html.A([
-    # html.Img(
-    #     src='https://cdn-icons-png.flaticon.com/512/1051/1051377.png?w=360',
-    #     style={
-    #         'height' : '4%',
-    #         'width' : '4%',
-    #     })
-    # ], href='https://github.com/calixtops', style = {'height':'5%'}),
-
-
-
-    # html.A([
-    # html.Img(
-    #     src='https://cdn-icons-png.flaticon.com/512/174/174857.png',
-    #     style={
-    #         'height' : '4%',
-    #         'width' : '4%',
-    #     })
-    # ], href='https://www.linkedin.com/in/calixtops/', style = {'height':'5%',"margin-left": "15px"}),
-
-    # ] , className = 'col-6', style = {'float':'right'}),
-
-    # html.Br(),
-    # html.Br(),
-
-
-    # ],className = 'row-2',style = {'float':'center'}),
-
+    dcc.Markdown('''# Pedro Silveira Calixto  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/calixtops/)''', style={'textAlign':'center','display':'inline'}),
 
 
 
@@ -62,8 +26,8 @@ layout = html.Div([
 
                 Oceanógrafo com ampla experiência em projetos de apoio à pesquisa e desenvolvimento. 
                 Sou mestre em ciências pela Universidade de São Paulo e possuo experiência em análise 
-                de dados meteoceanográficos, modelos e dados observacionais. Possuo dois anos de experiência
-                docente pela Universidade Federal do Ceará, como professor, lecionei disciplinas relacionadas
+                de dados meteoceanográficos, modelos e dados observacionais. Tive a satisfação de atuar como
+                docente pela Universidade Federal do Ceará, aonde lecionei disciplinas relacionadas
                 à análise e apresentação de dados oceanográficos e dinâmica de fluidos. Atualmente colaboro 
                 com o Programa Cientista Chefe Meio Ambiente (SEMA-CE), onde está sendo desenvolvido a Plataforma 
                 Estadual de Dados Ambientais (PEDEA). Experiência na execução de modelos de Machine Learning e manipulação de dados em Python.
