@@ -53,13 +53,20 @@ layout = html.Div([
 
     html.Hr(),
 
-    dcc.Markdown('Oceanógrafo com ampla experiência em projetos de apoio à pesquisa e desenvolvimento. Sou mestre em ciências pela \n'
-                 'Universidade de São Paulo e possuo experiência em análise de dados meteoceanográficos, modelos e dados observacionais. \n'
-                 'Possuo dois anos de experiência docente pela Universidade Federal do Ceará, como professor, lecionei disciplinas \n'
-                 'relacionadas à análise e apresentação de dados oceanográficos e dinâmica de fluídos. Atualmente colaboro com o \n'
-                 'Programa Cientista Chefe Meio Ambiente (SEMA-CE), aonde está sendo desenvolvido a Plataforma Estadual de Dados Ambientais (PEDEA).  \n'
-                 'Experiência na execução de modelos de Machine Learning e manipulação de dados em Python.',
-                 style={'textAlign': 'center', 'white-space': 'pre'}),
+    dcc.Markdown(
+
+                '''
+
+                Oceanógrafo com ampla experiência em projetos de apoio à pesquisa e desenvolvimento. 
+                Sou mestre em ciências pela Universidade de São Paulo e possuo experiência em análise 
+                de dados meteoceanográficos, modelos e dados observacionais. Possuo dois anos de experiência
+                docente pela Universidade Federal do Ceará, como professor, lecionei disciplinas relacionadas
+                à análise e apresentação de dados oceanográficos e dinâmica de fluidos. Atualmente colaboro 
+                com o Programa Cientista Chefe Meio Ambiente (SEMA-CE), onde está sendo desenvolvido a Plataforma 
+                Estadual de Dados Ambientais (PEDEA). Experiência na execução de modelos de Machine Learning e manipulação de dados em Python.
+
+
+                ''',style={'textAlign': 'center'}),
 
     dcc.Markdown('### Competências', style={'textAlign': 'center'}),
     html.Hr(),
@@ -108,13 +115,22 @@ layout = html.Div([
                         'Visa articular a pesquisa científica com demandas da gestão pública em benefício da sociedade.',
                          style={'white-space': 'pre'},
                          className='ms-3'),
-            html.Ul([
-                html.Li('Elaboração de documento com normas e padrões para a produção e armazenamento de dados georeferenciados e metadados.'),
-                html.Li('Aquisição e padronização de dados ambientais de vários pontos focais no Estado.'),
-                html.Li('Criação de um banco de dados (PostGIS) e apresentação através da Plataforma Estadual '
-                        'de Dados Ambientais (https://pedea.sema.ce.gov.br/portal/).'),
-                html.Li('Ferramentas utilizadas: QGIS / Python / Dash / SQL')
-            ])
+
+            dcc.Markdown(
+
+                '''
+            - Elaboração de documento com normas e padrões para a produção e armazenamento de dados georeferenciados e metadados.
+            * Aquisição e padronização de dados ambientais de vários pontos focais no Estado.
+            * Criação de um banco de dados (PostGIS) e apresentação através da 
+            [Plataforma Estadual de Dados Ambientais](https://pedea.sema.ce.gov.br/portal/).
+            * Ferramentas utilizadas: QGIS / Python / Dash / SQL
+
+
+                '''
+
+
+                ),
+
         ], width=5)
     ], justify='center'),
 
@@ -128,20 +144,25 @@ layout = html.Div([
                          '*SIARA Tecnologia e Consultoria Ambiental*',
                          style={'white-space': 'pre'},
                          className='ms-3'),
-            dcc.Markdown('Constituição de uma start-up de tecnologia ambiental, promovido pelo programa Clusters \n'
-                         'de Inovação Econômica e Corredores Digitais.',
-                         style={'white-space': 'pre'},
-                         className='ms-3'),
+            dcc.Markdown('''Constituição de uma start-up de tecnologia ambiental, promovido pelo programa \
+                [Clusters de Inovação Econômica e Corredores Digitais](https://www.sedet.ce.gov.br/negocios/comercio-servicos-e-inovacao/programa-clusters-economicos-de-inovacao/).''',
+                className='ms-3'),
 
-            html.Ul([
-                html.Li(
-                    'Projeto relacionado à energia eólica e a falta de soluções preditivas para programar a manutenção periódica dos equipamentos.'),
-                html.Li(
-                    'Desenvolvimento de uma aplicação em Flutter alimentada por uma API meteorológica e análise usando inteligência artificial '
-                     'para ajudar a planejar a manutenção obrigatória de equipamentos.'),
-                html.Li(
-                    'Ferramentas utilizadas: Flutter / Python'),
-            ])
+            dcc.Markdown(
+
+                '''
+
+                * Projeto relacionado à energia eólica e a falta de soluções preditivas para programar a manutenção periódica dos equipamentos.
+                * Desenvolvimento de uma aplicação em Flutter alimentada por uma API meteorológica e análise usando inteligência artificial 
+                para ajudar a planejar a manutenção obrigatória de equipamentos.
+                * Ferramentas utilizadas: Flutter / Python
+                '''
+
+                )
+
+
+
+
         ], width=5)
     ], justify='center'),
 
@@ -161,12 +182,20 @@ layout = html.Div([
             dcc.Markdown('Componentes curriculares ministradas para os cursos de graduação em Oceanografia e Ciências Ambientais:',
                          style={'white-space': 'pre'},
                          className='ms-3'),
-            html.Ul([
-                html.Li('Análise e Apresentação de Dados Oceanográficos em Python'),
-                html.Li('Interação Oceano-Atmosfera.'),
-                html.Li('Oceanografia Física Descritiva '),
-                html.Li('Oceanografia Dinâmica I')
-            ])
+
+            dcc.Markdown(
+
+                '''
+                * Análise e Apresentação de Dados Oceanográficos em Python
+                * Interação Oceano-Atmosfera.
+                * Oceanografia Física Descritiva 
+                * Oceanografia Dinâmica I
+
+                '''
+
+                )
+
+        
         ], width=5)
     ], justify='center'),
 
