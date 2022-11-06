@@ -37,9 +37,9 @@ row = [
             dbc.Col(
             [
             dbc.NavItem(theme_switch,
-            className="text-primary d-flex align-items-right m-2", 
+            className="text-primary d-flex align-items-center m-2", 
             ),
-            ], align ='right')
+            ], className = 'md2', align ='right')
 
 ]
 

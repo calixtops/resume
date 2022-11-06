@@ -2,7 +2,7 @@ import dash
 from dash import html, dcc
 import dash_bootstrap_components as dbc
 
-dash.register_page(__name__, order=0)
+dash.register_page(__name__, path = '/', order=0)
 
 # resume sample template from https://zety.com/
 layout = html.Div([
