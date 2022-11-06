@@ -10,39 +10,42 @@ layout = html.Div([
 
 
 
-    dcc.Markdown('# Pedro Silveira Calixto', style={'textAlign':'center'}),
+    dcc.Markdown('''# Pedro Silveira Calixto  [![Linkedin](https://img.shields.io/badge/-LINKEDIN-blue)](https://www.linkedin.com/in/calixtops/)''', style={'textAlign':'center','display':'inline'}),
 
-    html.Div([
+    # dcc.Markdown('''[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)(https://www.linkedin.com/in/calixtops/)] '''),
+    # dcc.Markdown('[!Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)(https://www.linkedin.com/in/calixtops/)'),
 
-    html.Div([
+    # html.Div([
 
-    html.A([
-    html.Img(
-        src='https://cdn-icons-png.flaticon.com/512/1051/1051377.png?w=360',
-        style={
-            'height' : '4%',
-            'width' : '4%',
-        })
-    ], href='https://github.com/calixtops', style = {'height':'5%'}),
+    # html.Div([
 
-
-
-    html.A([
-    html.Img(
-        src='https://cdn-icons-png.flaticon.com/512/174/174857.png',
-        style={
-            'height' : '4%',
-            'width' : '4%',
-        })
-    ], href='https://www.linkedin.com/in/calixtops/', style = {'height':'5%',"margin-left": "15px"}),
-
-    ] , className = 'col-6', style = {'float':'right'}),
-
-    html.Br(),
-    html.Br(),
+    # html.A([
+    # html.Img(
+    #     src='https://cdn-icons-png.flaticon.com/512/1051/1051377.png?w=360',
+    #     style={
+    #         'height' : '4%',
+    #         'width' : '4%',
+    #     })
+    # ], href='https://github.com/calixtops', style = {'height':'5%'}),
 
 
-    ],className = 'row-2',style = {'float':'center'}),
+
+    # html.A([
+    # html.Img(
+    #     src='https://cdn-icons-png.flaticon.com/512/174/174857.png',
+    #     style={
+    #         'height' : '4%',
+    #         'width' : '4%',
+    #     })
+    # ], href='https://www.linkedin.com/in/calixtops/', style = {'height':'5%',"margin-left": "15px"}),
+
+    # ] , className = 'col-6', style = {'float':'right'}),
+
+    # html.Br(),
+    # html.Br(),
+
+
+    # ],className = 'row-2',style = {'float':'center'}),
 
 
 
@@ -66,7 +69,7 @@ layout = html.Div([
                 Estadual de Dados Ambientais (PEDEA). Experiência na execução de modelos de Machine Learning e manipulação de dados em Python.
 
 
-                ''',style={'textAlign': 'center'}),
+                ''',className = 'text-justify', style={'textAlign': 'center'}),
 
     dcc.Markdown('### Competências', style={'textAlign': 'center'}),
     html.Hr(),

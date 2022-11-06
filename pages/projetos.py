@@ -9,7 +9,7 @@ import gc
 
 
 
-dash.register_page(__name__, title='App1', order=1)
+dash.register_page(__name__, title='Projetos', order=1)
 
 header = html.Div([
     html.Br(),

@@ -1,5 +1,5 @@
 import dash
-from dash import Dash, html
+from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 from dash_bootstrap_templates import ThemeSwitchAIO
 
@@ -55,6 +55,7 @@ header =dbc.Navbar(
         fluid=True,
 
     ),
+    sticky = True,
     dark=True,
     color='#87689c',
     style={'border-radius': 10}
