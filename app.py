@@ -12,7 +12,7 @@ external_stylesheets = [
 ]
 
 url_theme1 = dbc.themes.FLATLY
-template_theme1 = "flatly"
+template_theme1 = "minty"
 url_theme2 = dbc.themes.DARKLY
 template_theme2 = "darkly"
 
@@ -38,6 +38,7 @@ row = [
             [
             dbc.NavItem(theme_switch,
             className="text-primary d-flex align-items-center m-2", 
+
             ),
             ], className = 'md2', align ='right')
 
@@ -57,7 +58,7 @@ header =dbc.Navbar(
     ),
     sticky = True,
     dark=True,
-    color='#87689c',
+    color='#4d629e',
     style={'border-radius': 10}
 )
 

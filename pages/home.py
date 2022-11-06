@@ -51,7 +51,8 @@ layout = html.Div([
         ], width={"size": 3, "offset": 1}),
         dbc.Col([
             dcc.Markdown('''
-            * Pandas / Seaborn / Matplotlib / Dash / Plotly 
+            * Pandas / Seaborn / Matplotlib / 
+            * Dash / Plotly / Bokeh 
             * QGIS
             ''')
         ], width=3),

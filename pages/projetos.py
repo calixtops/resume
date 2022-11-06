@@ -26,7 +26,7 @@ header = html.Div([
         #### Olá, seja bem vindx à minha página de projetos! 👋
 
 
-        Olá, meu nome é Pedro e nesta página apresento alguns projetos de Análise e Visualização de Dados. 
+        Nessa página apresento alguns projetos de Análise e Visualização de Dados. 
         Tenho me dedicado a transformar os meus projetos em Aplicações Web para facilitar o compartilhamento e 
         apresentação desses projetos. Nesta página apresento alguns deles.
 
@@ -64,6 +64,7 @@ header = html.Div([
         style={
             'height' : '80%',
             'width' : '80%',
+            'align-items':'center',
         })
         ], href='https://pedea.sema.ce.gov.br/portal/', style={'align-items': 'center'}),
 
@@ -80,7 +81,7 @@ header = html.Div([
         -----
 
         
-        ### Find My Address
+        ### Find My Address 🌎
 
         O projeto Find My Address surgiu de uma necessidade da minha equipe de trabalho para encontrar as coordenadas
         de um endereço. Podemos encontrar as coordenadas de um dado endereço utilizando a biblioteca 
@@ -130,7 +131,7 @@ header = html.Div([
             --------
 
 
-            ### Dashboard BNDO
+            ### Dashboard BNDO 🌊
 
 
             O Banco Nacional de Dados Oceanográficos(BNDO) é uma coletânea de dados oceanográficos admnistrado pela Marinha do Brasil. 
@@ -164,7 +165,7 @@ header = html.Div([
             --------
 
 
-            ### Web Search
+            ### Web Search 🔎
 
 
             Projeto de Web Scraping para acessar páginas web fazer a busca de umas string dentro de links dentro desta página.
