@@ -20,35 +20,6 @@ app = dash.Dash(__name__, use_pages=True, external_stylesheets=external_styleshe
 
 server = app.server
 
-# theme_switch = ThemeSwitchAIO(aio_id="theme", themes=[url_theme1, url_theme2])
-# header =dbc.Navbar(
-#     dbc.Container(
-#         [
-#             dbc.Col([
-#                 dbc.NavbarToggler(id="navbar-toggler"),
-#                     dbc.Nav([
-#                         dbc.NavLink(page["name"], href=page["path"])
-#                         for page in dash.page_registry.values()
-#                         if not page["path"].startswith("/app")
-#                     ]),
-#             ],className = 'm6'),
-
-#             dbc.Col(
-#             [
-#             dbc.NavItem(theme_switch,
-#             className="text-primary d-flex align-items-right m-2", 
-#             ),
-#             ],className = 'right', style = {'align':'right','padding-right':'0px'}),
-
-#         ],
-#         fluid=True,
-
-#     ),
-#     dark=True,
-#     color='dark',
-#     style={'border-radius': 10}
-# )
-
 
 theme_switch = ThemeSwitchAIO(aio_id="theme", themes=[url_theme1, url_theme2])
 

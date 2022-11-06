@@ -43,15 +43,15 @@ header = html.Div([
 
         ### Plataforma Estadual de Dados Ambientais (PEDEA)
 
-        A PEDEA é uma plataforma que apresenta dados ambientais diversos a partir de um servidor geográfico. A plataforma 
-        foi desenvolvida no âmbito do Programa Cientista Chefe em Meio Ambiente em parceria com a Secretaria do Meio
-        Ambiente do Estado do Ceará. O objetivo do projeto Sig Ambiental é criar um repositório de dados ambientais 
-        e disponibilizar estes dados em benefício da sociedade civíl e orgãos de gestão do Estado. Para isso, foi adquirido 
-        diversos dados georreferenciados que foram processados e disponibilizados na plataforma.
+        A PEDEA é uma plataforma que apresenta dados ambientais diversos a partir de um servidor geográfico. 
+        A plataforma foi desenvolvida no âmbito do Programa Cientista Chefe em Meio Ambiente em parceria com a 
+        Secretaria do Meio Ambiente do Estado do Ceará. O objetivo do projeto Sig Ambiental é criar um repositório 
+        de dados ambientais e disponibilizar estes dados em benefício da sociedade civil e órgãos de gestão do Estado. 
+        Para isso, foi adquirido diversos dados georreferenciados que foram processados e disponibilizados na plataforma.
 
-        A plataforma foi desenvolvida em React e é alimentada a partir do Geoserver e banco de dados PostGIS. Minhas atribuições
-        nesse projeto estão relacionadas à aquisição e análise dos dados e auxílio na alimentação do banco de dados, bem como a 
-        realização de testes automatizados e divulgação da plataforma.
+        A plataforma foi desenvolvida em React sendo alimentada a partir do Geoserver e banco de dados PostGIS. 
+        Minhas atribuições nesse projeto estão relacionadas à aquisição e análise dos dados e auxílio na alimentação
+        do banco de dados, bem como a realização de testes automatizados e divulgação da plataforma.
 
         '''
         ),
