@@ -4,7 +4,8 @@ import dash_bootstrap_components as dbc
 from dash_bootstrap_templates import ThemeSwitchAIO
 
 font_awesome = "https://use.fontawesome.com/releases/v5.10.2/css/all.css"
-meta_tags = [{"name": "viewport", "content": "width=device-width, initial-scale=1.0"}]
+meta_tags = [{"name": "viewport", "content": "width=device-width, initial-scale=1"}]
+
 external_stylesheets = [
     meta_tags,
     font_awesome,
@@ -37,7 +38,7 @@ row = [
             dbc.Col(
             [
             dbc.NavItem(theme_switch,
-            className="text-primary d-flex align-items-center m-2", 
+            className="text-primary align-items-center m-2", 
 
             ),
             ], className = 'md2', align ='right')
