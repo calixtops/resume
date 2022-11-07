@@ -1,0 +1,9 @@
+.dash-spreadsheet-menu {
+margin: 1% 0 1% 0;
+justify-content: right;
+}
+
+.nav-pills .nav-link.active {
+    color: #fff;
+    background-color: orange;
+}

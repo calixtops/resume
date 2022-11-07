@@ -56,8 +56,8 @@ dbc.Accordion([
             '''
             ),
     
-    
             html.P('Clique na imagem para ser direcionado à plataforma'),
+            dbc.Row([
             html.A([
             html.Img(
             src='assets/PEDEA.png',
@@ -66,8 +66,9 @@ dbc.Accordion([
                 'width' : '80%',
                 'align-items':'center',
             })
-            ], href='https://pedea.sema.ce.gov.br/portal/', style={'align-items': 'center'}),
-    
+            ], href='https://pedea.sema.ce.gov.br/portal/', style={'align-items': 'center', 'textAlign':'center'}),
+            ],justify="center", align="center", className="h-50"),
+
             html.Br(),
             html.Br(),
     
@@ -77,7 +78,6 @@ dbc.Accordion([
         dcc.Markdown(
 
                 '''
-
                 
                 O projeto Find My Address surgiu de uma necessidade da minha equipe de trabalho para encontrar as coordenadas
                 de um endereço. Podemos encontrar as coordenadas de um dado endereço utilizando a biblioteca 
@@ -97,7 +97,7 @@ dbc.Accordion([
                 Out: Location(Cidade Universitária Armando de Salles Oliveira, Avenida Arruda Botelho, Alto de Pinheiros, 
                 São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, 
                 São Paulo, Região Sudeste, 05466-000, Brasil, (-23.56096405, -46.72770807289966, 0.0))
-
+                ```
 
                 Para uma melhor visualização do processo e para a utilização do algoritmo por colegas que não trabalham com python, desenvolvi 
                 a aplicação abaixo para realizar esta consulta:
@@ -106,7 +106,7 @@ dbc.Accordion([
                 '''
                 ),
 
-
+                dbc.Row([
                 html.P('Clique na imagem para ser direcionado à aplicação'),
                 html.A([
                 html.Img(
@@ -115,7 +115,10 @@ dbc.Accordion([
                     'height' : '80%',
                     'width' : '80%',
                 })
-                ], href='https://find-my-address.onrender.com/', style={'align-items': 'center'}),
+                ], href='https://find-my-address.onrender.com/', style={'align-items': 'center', 'textAlign':'center'}),
+
+                ],justify="center", align="center", className="h-50"),
+
 
                 html.Br(),
                 html.Br(),
@@ -140,7 +143,7 @@ dbc.Accordion([
                 ),
 
 
-
+            dbc.Row([
             html.P('Clique na imagem para ser direcionado ao dashboard'),
             html.A([
             html.Img(
@@ -149,7 +152,10 @@ dbc.Accordion([
                 'height' : '80%',
                 'width' : '80%',
             })
-            ], href='http://dash-bndo.uc.r.appspot.com/', style={'align-items': 'center'}),
+            ], href='http://dash-bndo.uc.r.appspot.com/', style={'align-items': 'center', 'textAlign':'center'}),
+
+            ],justify="center", align="center", className="h-50"),
+
 
         ],title = 'Dashboard BNDO 🌊'),
 
@@ -157,12 +163,6 @@ dbc.Accordion([
         dbc.AccordionItem([
             dcc.Markdown(
                 '''
-
-                --------
-
-
-                ### Web Search 🔎
-
 
                 Projeto de Web Scraping para acessar páginas web fazer a busca de umas string dentro de links dentro desta página.
                 O projeto surgiu da necessidade de conferir os links de download de metadados dentro da Plataforma Estadual de Dados 
@@ -173,22 +173,18 @@ dbc.Accordion([
                 Os links em que a string foi encontrada são apresentados em uma tabela, como mostrado no exemplo abaixo:
 
 
-
-
                 '''
 
                 ),
 
 
 
+            dbc.Row([
             html.Img(
             src='assets/web.png',
-            style={
-                'height' : '80%',
-                'width' : '80%',
-                'textAlign':'center'
-            }),
+            style={'align-items': 'center', 'textAlign':'center'}),
 
+            ],justify="center", align="center", className="h-50"),
 
             html.Br(),
 
@@ -226,7 +222,230 @@ dbc.Accordion([
 
                 ),
         ], title = 'Web Search 🔎'),
-])
+
+
+
+
+
+        dbc.AccordionItem([
+            dcc.Markdown(
+                '''
+
+                --------
+
+
+                Projeto de Machine Learning para estimar o potencial de faturamento para os bairros de São Paulo
+                a partir dos dados de potencial de faturamento dos bairros da cidade do Rio de Janeiro.
+
+                Para esse case de Machine Learning, dispomos dos dados de sociodemografia para os bairros do Rio de
+                Janeiro. A partir desses dados, se pede que seja montado uma análise para os bairros de São Paulo, respondendo
+                as seguintes questões:
+
+                1. Estimar o faturamento que uma loja teria em cada um dos bairros.
+                2. Classificar o potencial de cada bairro como Alto, Médio ou Baixo.
+                3. Segmentar os bairros de São Paulo de acordo com a renda e a idade, e indicar 
+                aqueles com maior aderência ao público alvo.
+
+                Consideramos como público alvo desta empresa a população de adultos entre 25 a 50 anos, das classes 
+                A(rendas A1 e A2) e B(rendas B1 e B2).
+
+                Trata-se de um bom case para exercitar técnicas de machine learning, dado que entre as questões levantadas,
+                é necessário aplicar algoritmos de Regressão, Classificação e Clusterização.
+
+                Apresento abaixo uma versão simplificada da resolução do case. Para maiores detalhes acesse o repositorio
+                do GitHub.
+
+
+                ###### Pré-processamento dos dados
+
+               ```python
+
+                import pandas as pd 
+                import numpy as np
+
+
+                # Leitura e pre-processamento do dataset
+                file = 'DadosDesafioCientista.xlsx'
+                dataset = pd.read_excel(file,na_values = '-')
+
+                ## SimpleImputer para preencher valores NaN
+                s_imputer = SimpleImputer(missing_values = np.nan, strategy = 'mean', verbose = 0)
+                s_imputer = s_imputer.fit(dataset.iloc[:,4:-2])
+                dataset.iloc[:,4:-2] = s_imputer.transform(dataset.iloc[:,4:-2])
+
+
+                ```
+
+                ###### Aplicação do modelo de regressão *Random Forest Regressor* para estimar o faturamento.
+
+               ```python
+
+                from sklearn.ensemble import RandomForestRegressor
+                from sklearn.model_selection import GridSearchCV, train_test_split, KFold
+
+                # Tunando hiperparametros utilizando GridSearchCV
+                # Podemos escolher os parametros que iremos testar, caso optemos por muitos parametros, podemos
+                # utilizar o RandomizedSearchCV ao invés do GridSearchCV
+
+                param_grid_RFR = { 'n_estimators'     : [10,50,100,200,300, 400, 500],
+                                   'criterion'        : ['mse', 'mae'],
+                                   'max_features'     : ['auto', 'sqrt'],
+                                   'max_depth'        : [10, 35, 60, 85, 110],
+                                   'min_samples_split': [2, 5, 10],
+                                   'min_samples_leaf' : [1, 2, 4],
+                                   'bootstrap'        : [True, False]}
+
+
+                # Selecionando os dados dos bairros do Rio de Janeiro para treinar o nosso modelo
+                df_train = dataset[dataset['estado'] == 'RJ']
+
+                # Dividindo o dataset em treino e teste
+                X_train = df_train.iloc[:,4:-2].values
+                y_train = df_train.iloc[:,-2].values
+                X_train, X_test, y_train, y_test = train_test_split(X_train, y_train, test_size = 0.25, random_state = 1)
+
+                # Criando modelo para utilizar no GridSearchCV   
+                rf = RandomForestRegressor(random_state=11)
+
+                # Busca de hiperparametros ideais para o nosso modelo
+                search = GridSearchCV(estimator = rf, param_grid = param_grid, 
+                                        cv = KFold(n_splits = 5), n_jobs = -1, 
+                                        verbose = 2, scoring = 'r2')
+
+                search.fit(X_train, y_train)
+
+
+                # Treinando o modelo utilizando os melhores hiperparametros encontrados pelo GridSearchCV
+                RFR = RandomForestRegressor(**search.best_params_, random_state=11)
+                RFR.fit(X_train,y_train)
+
+
+                # Testando o modelo
+                y_train_pred = RFR.predict(X_train)
+                y_test_pred = RFR.predict(X_test)
+
+                # Calculando métricas de teste e treino
+                r2_train = r2_score(y_train, y_train_pred)
+                r2_test =r2_score(y_test, y_test_pred)
+
+                # ------- Métricas -------------
+                print('R2 Train Score : {:.1%}'.format(r2_train))
+                print('R2 Test Score : {:.1%}'.format(r2_test))
+                print('r2 Score Search : {:.1%}'.format(search.best_score_))
+
+                ```
+                ###### Após treinar o nosso modelo de regressão, podemos partir para o algoritmo de Classificação. Os passos que seguiremos serão semelhantes aos apresentados na Regressão, para isso usaremos o *Random Forest Classifier*.
+
+               ```python
+
+                from sklearn.metrics import accuracy_score 
+                from sklearn.ensemble import RandomForestClassifier
+                from sklearn.model_selection import GridSearchCV, train_test_split, KFold
+
+
+                ####### Estimando hiperparametros para a Classificação
+                param_grid_RFC =  {'n_estimators'     : [50, 100, 200, 300, 400, 500],
+                                   'criterion'        : ["gini", "entropy"],
+                                   'max_depth'        : [10, 35, 60, 85, 110],
+                                   'min_samples_split': [2, 5, 10],
+                                   'min_samples_leaf' : [1, 2, 4],
+                                   'bootstrap'        : [True, False]}
+
+
+                df_train = dataset[dataset['estado'] == 'RJ']
+
+                df_train = pd.get_dummies(df_train, columns=['potencial'])
+
+                X_train = df_train.iloc[:,4:].values
+                y_train = df_train.iloc[:, -3::].values
+
+                X_train, X_test, y_train, y_test = train_test_split(X_train, y_train, test_size = 0.25, random_state = 1)
+
+                RFC = RandomForestClassifier(random_state=11)
+
+                search = GridSearchCV(estimator = RFC, param_grid = param_grid_RFC, cv = KFold(n_splits = 5), n_jobs = -1, verbose = 2)
+                search.fit(X_train, y_train)
+
+                RFC = RandomForestClassifier(**search.best_params_,random_state=11)
+                RFC.fit(X_train,y_train)
+
+                y_train_pred = RFC.predict(X_train)
+                y_test_pred = RFC.predict(X_test)
+
+                a_score_train = accuracy_score(y_train, y_train_pred)
+                a_score_test =accuracy_score(y_test, y_test_pred)
+
+
+                # ------- Métricas -------------
+                print('Train Accuracy Score : {:.1%}'.format(a_score_train))
+                print('Test  Accuracy Score : {:.1%}'.format(a_score_test))
+                print('r2 score search : {:.1%}'.format(search.best_score_))
+
+
+                ```
+                '''
+
+                ),
+
+
+            html.Br(),
+
+            dcc.Markdown(
+                '''
+
+                Para apresentar os resultados da Regressão e Classificação, foi criado um Dashboard de acompanhamento
+                aonde o cliente pode acessar os dados de faturamento e potencial para os bairros do Rio de Janeiro e São Paulo.
+
+                '''
+
+                ),
+
+
+            dbc.Row([
+            html.A([
+            html.Img(
+            src='assets/ml-case1.png',
+            style={
+                'height' : '80%',
+                'width' : '80%',
+            })
+            ], href='https://dash-ml-case1.onrender.com/', 
+               style={'align-items': 'center', 'textAlign':'center'}),
+
+            dcc.Markdown('Abaixo temos algumas figuras resultantes do projeto:'),
+            ],justify="center", align="center", className="h-50"),
+
+            dbc.Row([
+            dbc.Carousel(
+                items=[
+                    {"key": "1", "src": "assets/ml-figures1.png"},
+                    {"key": "2", "src": "assets/ml-figures2.png"},
+                    {"key": "3", "src": "assets/ml-figures3.png"},
+                    {"key": "4", "src": "assets/ml-figures4.png"},
+                    {"key": "5", "src": "assets/ml-figures5.png"},
+                    {"key": "6", "src": "assets/ml-figures6.png"},
+                ],
+                className="carousel-fade",style = {'width':'50%', 'align':'center'},
+                controls=True,
+                indicators=False,
+                interval=2000,
+                ride="carousel",
+            ),
+
+            ],justify="center", align="center", className="h-50"),
+
+
+
+
+        ], title = 'Estimativa de faturamento para os bairros de São Paulo - Case Machine Learning'),
+
+
+
+
+
+
+
+], flush = True, start_collapsed=True)
 ])
 
 def layout():

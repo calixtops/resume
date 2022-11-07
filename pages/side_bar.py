@@ -27,5 +27,4 @@ def sidebar():
             )
     return dbc.Nav(children=nav_links,
                    vertical=True,
-                   pills=True,
-                   className="bg-info")
+                   pills=True)

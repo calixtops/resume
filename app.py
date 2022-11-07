@@ -27,7 +27,7 @@ row = [
             dbc.Col([
                 dbc.NavbarToggler(id="navbar-toggler"),
                     dbc.Nav([
-                        dbc.NavLink(page["name"], href=page["path"])
+                        dbc.NavLink(page["name"], href=page["path"], style = {'font-weight':'bold'}, className = 'text-secondary')
                         for page in dash.page_registry.values()
                         if not page["path"].startswith("/app")
                     ]),
@@ -58,7 +58,7 @@ header =dbc.Navbar(
     ),
     sticky = True,
     dark=True,
-    color='#4d629e',
+    className = 'bg-primary',
     style={'border-radius': 10}
 )
 
