@@ -27,7 +27,7 @@ row = [
             dbc.Col([
                 dbc.NavbarToggler(id="navbar-toggler"),
                     dbc.Nav([
-                        dbc.NavLink(page["name"], href=page["path"], style = {'font-weight':'bold'}, className = 'text-secondary')
+                        dbc.NavLink(page["name"], href=page["path"], style = {'font-weight':'bold'}, className = 'text-primary')
                         for page in dash.page_registry.values()
                         if not page["path"].startswith("/app")
                     ]),

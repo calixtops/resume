@@ -42,7 +42,7 @@ dbc.Accordion([
         dcc.Markdown(
     
             '''
-    
+            ----
             A PEDEA é uma plataforma que apresenta dados ambientais diversos a partir de um servidor geográfico. 
             A plataforma foi desenvolvida no âmbito do Programa Cientista Chefe em Meio Ambiente em parceria com a 
             Secretaria do Meio Ambiente do Estado do Ceará. O objetivo do projeto Sig Ambiental é criar um repositório 
@@ -72,13 +72,13 @@ dbc.Accordion([
             html.Br(),
             html.Br(),
     
-    ], title = 'Plataforma Estadual de Dados Ambientais (PEDEA)' ),
+    ], title = 'Plataforma Estadual de Dados Ambientais (PEDEA) 🌳' ),
 
     dbc.AccordionItem([
         dcc.Markdown(
 
                 '''
-                
+                -----
                 O projeto Find My Address surgiu de uma necessidade da minha equipe de trabalho para encontrar as coordenadas
                 de um endereço. Podemos encontrar as coordenadas de um dado endereço utilizando a biblioteca 
                 [Geopy](https://geopy.readthedocs.io/en/stable/). Trata-se de um trabalho simples de se realizar em sua maquina local,
@@ -129,6 +129,7 @@ dbc.Accordion([
             dcc.Markdown(
                 '''
 
+                ----
 
                 O Banco Nacional de Dados Oceanográficos(BNDO) é uma coletânea de dados oceanográficos admnistrado pela Marinha do Brasil. 
                 Os dados do BNDO integram o [Atlas Digital Costeiro e Marinho](https://www.sema.ce.gov.br/89965-2/planejamento-costeiro-e-marinho-do-ceara/atlas-digital-costeiro-e-marinho-do-ceara/)
@@ -163,6 +164,7 @@ dbc.Accordion([
         dbc.AccordionItem([
             dcc.Markdown(
                 '''
+                ----
 
                 Projeto de Web Scraping para acessar páginas web fazer a busca de umas string dentro de links dentro desta página.
                 O projeto surgiu da necessidade de conferir os links de download de metadados dentro da Plataforma Estadual de Dados 
@@ -411,19 +413,18 @@ dbc.Accordion([
             })
             ], href='https://dash-ml-case1.onrender.com/', 
                style={'align-items': 'center', 'textAlign':'center'}),
-
+            html.Br(),
             dcc.Markdown('Abaixo temos algumas figuras resultantes do projeto:'),
             ],justify="center", align="center", className="h-50"),
-
             dbc.Row([
             dbc.Carousel(
                 items=[
-                    {"key": "1", "src": "assets/ml-figures1.png"},
-                    {"key": "2", "src": "assets/ml-figures2.png"},
-                    {"key": "3", "src": "assets/ml-figures3.png"},
-                    {"key": "4", "src": "assets/ml-figures4.png"},
-                    {"key": "5", "src": "assets/ml-figures5.png"},
-                    {"key": "6", "src": "assets/ml-figures6.png"},
+                    {"key": "1", "src": "assets/ml-figuresw1.png"},
+                    {"key": "2", "src": "assets/ml-figuresw2.png"},
+                    {"key": "3", "src": "assets/ml-figuresw3.png"},
+                    {"key": "4", "src": "assets/ml-figuresw4.png"},
+                    {"key": "5", "src": "assets/ml-figuresw5.png"},
+                    {"key": "6", "src": "assets/ml-figuresw6.png"},
                 ],
                 className="carousel-fade",style = {'width':'50%', 'align':'center'},
                 controls=True,
@@ -437,7 +438,7 @@ dbc.Accordion([
 
 
 
-        ], title = 'Estimativa de faturamento para os bairros de São Paulo - Case Machine Learning'),
+        ], title = 'Estimativa de faturamento para os bairros de São Paulo - Case Machine Learning 📊'),
 
 
 
