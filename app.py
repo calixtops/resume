@@ -24,7 +24,6 @@ server = app.server
 theme_switch = ThemeSwitchAIO(aio_id="theme", themes=[url_theme1, url_theme2])
 
 row = [
-
             dbc.Col([
                 dbc.NavbarToggler(id="navbar-toggler"),
                     dbc.Nav([
@@ -32,15 +31,17 @@ row = [
                         for page in dash.page_registry.values()
                         if not page["path"].startswith("/app")
                     ]),
-            ], className = ''),
+            ], className = 'm-6'),
+
 
             dbc.Col(
             [
             dbc.NavItem(theme_switch,
-            className="text-secondary d-flex align-items-right m-2", 
+            className="text-secondary d-flex align-items-center m-2", 
 
             ),
-            ], className = '' , align ='right')
+            ])
+        
 
 ]
 

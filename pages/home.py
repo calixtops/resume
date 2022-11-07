@@ -250,4 +250,4 @@ layout = html.Div([
 
 
 
-], className = '')
+], className = 'col-sd-4')
