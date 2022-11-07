@@ -5,7 +5,6 @@ from dash_bootstrap_templates import ThemeSwitchAIO
 
 font_awesome = "https://use.fontawesome.com/releases/v5.10.2/css/all.css"
 meta_tags = [{"name": "viewport", "content": "width=device-width, initial-scale=1"}]
-
 external_stylesheets = [
     meta_tags,
     font_awesome,
@@ -33,15 +32,15 @@ row = [
                         for page in dash.page_registry.values()
                         if not page["path"].startswith("/app")
                     ]),
-            ]),
+            ], className = ''),
 
             dbc.Col(
             [
             dbc.NavItem(theme_switch,
-            className="text-primary align-items-center m-2", 
+            className="text-secondary d-flex align-items-right m-2", 
 
             ),
-            ], className = 'md2', align ='right')
+            ], className = '' , align ='right')
 
 ]
 
@@ -50,8 +49,7 @@ header =dbc.Navbar(
     dbc.Container(
         [
 
-
-            dbc.Row(row,justify = 'evenly'),
+            dbc.Row(row,justify = 'evenly', className = 'row'),
 
         ],
         fluid=True,
@@ -63,7 +61,7 @@ header =dbc.Navbar(
     style={'border-radius': 10}
 )
 
-app.layout = dbc.Container([header, dash.page_container], fluid=False)
+app.layout = dbc.Container([header, dash.page_container], fluid=False, className = 'container')
 
 
 

@@ -80,13 +80,12 @@ layout = html.Div([
                          '*Programa Cientista Chefe Meio Ambiente* \n'
                          '*Secretaria do Meio Ambiente - Fortaleza, Ceará*',
                          style={'white-space': 'pre'},
-                         className='ms-3'),
+                         ),
 
 
             dcc.Markdown('Projeto financiado pela Fundação Cearense de Apoio ao Desenvolvimento Científico e Tecnológico (FUNCAP). \n'
                         'Visa articular a pesquisa científica com demandas da gestão pública em benefício da sociedade.',
-                         style={'white-space': 'pre'},
-                         className='ms-3'),
+                         ),
 
             dcc.Markdown(
 
@@ -115,10 +114,10 @@ layout = html.Div([
             dcc.Markdown('**CEO** \n'
                          '*SIARA Tecnologia e Consultoria Ambiental*',
                          style={'white-space': 'pre'},
-                         className='ms-3'),
-            dcc.Markdown('''Constituição de uma start-up de tecnologia ambiental, promovido pelo programa \
-                [Clusters de Inovação Econômica e Corredores Digitais](https://www.sedet.ce.gov.br/negocios/comercio-servicos-e-inovacao/programa-clusters-economicos-de-inovacao/).''',
-                className='ms-3'),
+                         ),
+            dcc.Markdown('''Constituição de uma start-up de tecnologia ambiental, promovido pelo Programa \
+                [Clusters Econômicos de Inovação](https://www.sedet.ce.gov.br/clusters-e-i-2/).''',
+                ),
 
             dcc.Markdown(
 
@@ -148,12 +147,11 @@ layout = html.Div([
             dcc.Markdown('**Professor Substituto da Carreira do Magistério Superior** \n'
                          '*Instituto de Ciências do Mar, Universidade Federal do Ceará* \n',
                          style={'white-space': 'pre'},
-                         className='ms-3'),
+                         ),
 
 
             dcc.Markdown('Componentes curriculares ministradas para os cursos de graduação em Oceanografia e Ciências Ambientais:',
-                         style={'white-space': 'pre'},
-                         className='ms-3'),
+                          ),
 
             dcc.Markdown(
 
@@ -180,11 +178,10 @@ layout = html.Div([
             dcc.Markdown('**Pesquisador** \n'
                          '*Fundação Cearense de Meteorologia e Recursos hídricos (FUNCEME)*',
                          style={'white-space': 'pre'},
-                         className='ms-3'),
+                         ),
             dcc.Markdown('Assistência técnica e científica em projetos de pesquisa e desenvolvimento relacionados \n'
                          'ao tempo e clima, com foco nos recursos hídricos do Estado do Ceará.',
-                         style={'white-space': 'pre'},
-                         className='ms-3'),
+                         ),
 
             html.Ul([
                 html.Li(
@@ -205,12 +202,11 @@ layout = html.Div([
             dcc.Markdown('**Pesquisador Colaborador** \n'
                          '*Petróleo Brasileiro S.A - Petrobras*',
                          style={'white-space': 'pre'},
-                         className='ms-3'),
+                         ),
             dcc.Markdown('Utilização de dados observacionais e modelos para a caracterização física da \n'
                         'plataforma continental e região oceânica proxima aos estados do Espirito Santo e \n'
                         'Sergipe-Alagoas, Brasil.',
-                         style={'white-space': 'pre'},
-                         className='ms-3'),
+                         ),
 
             html.Ul([
                 html.Li(
@@ -234,7 +230,7 @@ layout = html.Div([
             dcc.Markdown('**Mestrado em Ciência**s\n'
                          '*Universidade de São Paulo - São Paulo, SP*',
                          style={'white-space': 'pre'},
-                         className='ms-3'),
+                         ),
         ], width=5)
     ], justify='center'),
 
@@ -248,10 +244,10 @@ layout = html.Div([
             dcc.Markdown('**Graduação em Oceanografia** \n'
                          '*Universidade Federal do Ceará - Fortaleza, CE*',
                          style={'white-space': 'pre'},
-                         className='ms-3'),
+                         ),
         ], width=5)
     ], justify='center'),
 
 
 
-])
+], className = '')

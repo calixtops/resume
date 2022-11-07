@@ -23,7 +23,7 @@ header = html.Div([
     dcc.Markdown(
         '''
 
-        #### Olá, seja bem vindx à minha página de projetos! 👋
+        ### Olá, seja bem vindx à minha página de projetos! 👋
 
 
         Nessa página apresento alguns projetos de Análise e Visualização de Dados. 
@@ -57,7 +57,7 @@ header = html.Div([
         ),
 
 
-        html.P('Clique na imagem para ser redirecionado à plataforma'),
+        html.P('Clique na imagem para ser direcionado à plataforma'),
         html.A([
         html.Img(
         src='assets/PEDEA.png',
@@ -111,7 +111,7 @@ header = html.Div([
         ),
 
 
-        html.P('Clique na imagem para ser redirecionado à aplicação'),
+        html.P('Clique na imagem para ser direcionado à aplicação'),
         html.A([
         html.Img(
         src='assets/find.png',
@@ -148,7 +148,7 @@ header = html.Div([
 
 
 
-        html.P('Clique na imagem para ser redirecionado ao dashboard'),
+        html.P('Clique na imagem para ser direcionado ao dashboard'),
         html.A([
         html.Img(
         src='assets/bndo.png',

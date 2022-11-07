@@ -9,7 +9,7 @@ green_text = {'color':'green'}
 def layout():
     return dbc.Row([
         dbc.Col([
-    dcc.Markdown('# Pedro SIlveira Calixto', className='mt-3'),
+    dcc.Markdown('# Pedro Silveira Calixto', className='mt-3'),
     # dcc.Markdown('### FC Barcelona Forward', className='mb-5'),
     dcc.Markdown('### Informações Pessoais', style={'color':'gray'}),
     dcc.Markdown('Endereço', style=green_text),
