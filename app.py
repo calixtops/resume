@@ -24,6 +24,8 @@ server = app.server
 theme_switch = ThemeSwitchAIO(aio_id="theme", themes=[url_theme1, url_theme2])
 
 row = [
+
+    
             dbc.Col([
                 dbc.NavbarToggler(id="navbar-toggler"),
                     dbc.Nav([
@@ -31,7 +33,7 @@ row = [
                         for page in dash.page_registry.values()
                         if not page["path"].startswith("/app")
                     ]),
-            ], className = 'm-6'),
+            ], className = 'col'),
 
 
             dbc.Col(
@@ -40,7 +42,7 @@ row = [
             className="text-secondary d-flex align-items-center m-2", 
 
             ),
-            ])
+            ], className = 'justify-content-between')
         
 
 ]
@@ -50,7 +52,7 @@ header =dbc.Navbar(
     dbc.Container(
         [
 
-            dbc.Row(row,justify = 'evenly', className = 'row'),
+            dbc.Row(row,justify = 'evenly'),
 
         ],
         fluid=True,
@@ -62,7 +64,7 @@ header =dbc.Navbar(
     style={'border-radius': 10}
 )
 
-app.layout = dbc.Container([header, dash.page_container], fluid=False, className = 'container')
+app.layout = dbc.Container([header, dash.page_container], fluid=False)
 
 
 

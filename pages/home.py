@@ -34,10 +34,13 @@ layout = html.Div([
                 docente pela Universidade Federal do Ceará, aonde lecionei disciplinas relacionadas
                 à análise e apresentação de dados oceanográficos e dinâmica de fluidos. Atualmente colaboro 
                 com o Programa Cientista Chefe Meio Ambiente (SEMA-CE), onde está sendo desenvolvido a Plataforma 
-                Estadual de Dados Ambientais (PEDEA). Experiência na execução de modelos de Machine Learning e manipulação de dados em Python.
+                Estadual de Dados Ambientais (PEDEA). Possuo facilidade em aprender novas tecnologias e estou 
+                continuamente buscando o aperfeiçoamento das minhas habilidades. Experiência na execução de modelos 
+                de Machine Learning e manipulação de dados em Python.
 
 
-                ''',className = 'text-justify', style={'textAlign': 'center'}),
+
+                ''',className = 'text-justify', style={'textAlign': 'justify'}),
 
     dcc.Markdown('### Competências', style={'textAlign': 'center'}),
     html.Hr(),

@@ -54,7 +54,7 @@ dbc.Accordion([
             do banco de dados, bem como a realização de testes automatizados e divulgação da plataforma.
     
             '''
-            ),
+            ,style={'textAlign': 'justify'}),
     
             html.P('Clique na imagem para ser direcionado à plataforma'),
             dbc.Row([
@@ -66,7 +66,8 @@ dbc.Accordion([
                 'width' : '80%',
                 'align-items':'center',
             })
-            ], href='https://pedea.sema.ce.gov.br/portal/', style={'align-items': 'center', 'textAlign':'center'}),
+            ], href='https://pedea.sema.ce.gov.br/portal/', 
+            style={'align-items': 'center', 'textAlign':'center'},target="_blank"),
             ],justify="center", align="center", className="h-50"),
 
             html.Br(),
@@ -104,7 +105,7 @@ dbc.Accordion([
 
 
                 '''
-                ),
+                ,style={'textAlign': 'justify'}),
 
                 dbc.Row([
                 html.P('Clique na imagem para ser direcionado à aplicação'),
@@ -115,7 +116,7 @@ dbc.Accordion([
                     'height' : '80%',
                     'width' : '80%',
                 })
-                ], href='https://find-my-address.onrender.com/', style={'align-items': 'center', 'textAlign':'center'}),
+                ], href='https://find-my-address.onrender.com/', style={'align-items': 'center', 'textAlign':'center'},target="_blank"),
 
                 ],justify="center", align="center", className="h-50"),
 
@@ -141,7 +142,7 @@ dbc.Accordion([
 
                 '''
 
-                ),
+                ,style={'textAlign': 'justify'}),
 
 
             dbc.Row([
@@ -153,7 +154,7 @@ dbc.Accordion([
                 'height' : '80%',
                 'width' : '80%',
             })
-            ], href='http://dash-bndo.uc.r.appspot.com/', style={'align-items': 'center', 'textAlign':'center'}),
+            ], href='http://dash-bndo.uc.r.appspot.com/', style={'align-items': 'center', 'textAlign':'center'},target="_blank"),
 
             ],justify="center", align="center", className="h-50"),
 
@@ -177,7 +178,7 @@ dbc.Accordion([
 
                 '''
 
-                ),
+                ,style={'textAlign': 'justify'}),
 
 
 
@@ -387,7 +388,7 @@ dbc.Accordion([
                 ```
                 '''
 
-                ),
+                ,style={'textAlign': 'justify'}),
 
 
             html.Br(),
@@ -412,7 +413,7 @@ dbc.Accordion([
                 'width' : '80%',
             })
             ], href='https://dash-ml-case1.onrender.com/', 
-               style={'align-items': 'center', 'textAlign':'center'}),
+               style={'align-items': 'center', 'textAlign':'center'},target="_blank"),
             html.Br(),
             dcc.Markdown('Abaixo temos algumas figuras resultantes do projeto:'),
             ],justify="center", align="center", className="h-50"),
@@ -440,6 +441,44 @@ dbc.Accordion([
 
         ], title = 'Estimativa de faturamento para os bairros de São Paulo - Case Machine Learning 📊'),
 
+
+        dbc.AccordionItem([
+            dcc.Markdown(
+                '''
+                ----
+
+                Projeto de dashboard utilizando o Google Looker Studio (Data Studio) para acompanhamento de atualização das
+                camadas adiconadas à Plataforma Estadual de Dados Espaciais Ambientais (PEDEA) e suas respectivas classes temáticas. 
+
+                '''
+
+                ,style={'textAlign': 'justify'}),
+
+            html.Br(),
+
+
+            html.A([
+
+                html.P('Para acessar o dashboard em tela cheia, clique aqui!!')
+            ], href='https://datastudio.google.com/embed/reporting/9a718457-19fa-45c0-a14f-41b0a97729b4/page/BLZ7C', 
+               target="_blank"),
+
+            dbc.Row([
+
+            html.Iframe(
+            src="https://datastudio.google.com/embed/reporting/9a718457-19fa-45c0-a14f-41b0a97729b4/page/BLZ7C",
+            style={'align-items': 'center', 'textAlign':'center',"height": "1010px"}),
+
+            ],justify="center", align="center", className="h-50"),
+
+            html.Br(),
+
+            html.Br(),
+
+            html.Br(),
+
+
+        ], title = 'Dashboard de acompanhamento PEDEA - GoogleLookerStudio 🔎'),
 
 
 
