@@ -56,18 +56,15 @@ dbc.Accordion([
             '''
             ,style={'textAlign': 'justify'}),
     
-            html.P('Clique na imagem para ser direcionado à plataforma'),
             dbc.Row([
             html.A([
-            html.Img(
-            src='assets/PEDEA.png',
-            style={
-                'height' : '80%',
-                'width' : '80%',
-                'align-items':'center',
-            })
+
+            html.Span('Para acessar a aplicação em tela cheia, clique aqui!!')
             ], href='https://pedea.sema.ce.gov.br/portal/', 
-            style={'align-items': 'center', 'textAlign':'center'},target="_blank"),
+               target="_blank"),
+            html.Iframe(
+                src="https://pedea.sema.ce.gov.br/portal/",
+                style={'align-items': 'center', 'textAlign':'center',"height": "980px"})
             ],justify="center", align="center", className="h-50"),
 
             html.Br(),
@@ -108,15 +105,14 @@ dbc.Accordion([
                 ,style={'textAlign': 'justify'}),
 
                 dbc.Row([
-                html.P('Clique na imagem para ser direcionado à aplicação'),
                 html.A([
-                html.Img(
-                src='assets/find.png',
-                style={
-                    'height' : '80%',
-                    'width' : '80%',
-                })
-                ], href='https://find-my-address.onrender.com/', style={'align-items': 'center', 'textAlign':'center'},target="_blank"),
+
+                html.Span('Para acessar a aplicação em tela cheia, clique aqui!!')
+                ], href='https://find-my-address.onrender.com/', 
+                   target="_blank"),
+                html.Iframe(
+                src="https://find-my-address.onrender.com/",
+                style={'align-items': 'center', 'textAlign':'center',"height": "800px"}),
 
                 ],justify="center", align="center", className="h-50"),
 
@@ -146,15 +142,14 @@ dbc.Accordion([
 
 
             dbc.Row([
-            html.P('Clique na imagem para ser direcionado ao dashboard'),
             html.A([
-            html.Img(
-            src='assets/bndo.png',
-            style={
-                'height' : '80%',
-                'width' : '80%',
-            })
-            ], href='http://dash-bndo.uc.r.appspot.com/', style={'align-items': 'center', 'textAlign':'center'},target="_blank"),
+
+            html.Span('Para acessar o dashboard em tela cheia, clique aqui!!')
+            ], href='https://dash-bndo.uc.r.appspot.com/', 
+               target="_blank"),
+            html.Iframe(
+            src="https://dash-bndo.uc.r.appspot.com/",
+            style={'align-items': 'center', 'textAlign':'center',"height": "800px"}),
 
             ],justify="center", align="center", className="h-50"),
 
@@ -403,17 +398,15 @@ dbc.Accordion([
 
                 ),
 
-
             dbc.Row([
             html.A([
-            html.Img(
-            src='assets/ml-case1.png',
-            style={
-                'height' : '80%',
-                'width' : '80%',
-            })
+
+            html.Span('Para acessar o dashboard em tela cheia, clique aqui!!')
             ], href='https://dash-ml-case1.onrender.com/', 
-               style={'align-items': 'center', 'textAlign':'center'},target="_blank"),
+               target="_blank"),
+            html.Iframe(
+            src="https://dash-ml-case1.onrender.com/",
+            style={'align-items': 'center', 'textAlign':'center',"height": "800px"}),
             html.Br(),
             dcc.Markdown('Abaixo temos algumas figuras resultantes do projeto:'),
             ],justify="center", align="center", className="h-50"),
@@ -459,7 +452,7 @@ dbc.Accordion([
 
             html.A([
 
-                html.P('Para acessar o dashboard em tela cheia, clique aqui!!')
+                html.Span('Para acessar o dashboard em tela cheia, clique aqui!!')
             ], href='https://datastudio.google.com/embed/reporting/9a718457-19fa-45c0-a14f-41b0a97729b4/page/BLZ7C', 
                target="_blank"),
 
@@ -467,7 +460,7 @@ dbc.Accordion([
 
             html.Iframe(
             src="https://datastudio.google.com/embed/reporting/9a718457-19fa-45c0-a14f-41b0a97729b4/page/BLZ7C",
-            style={'align-items': 'center', 'textAlign':'center',"height": "1010px"}),
+            style={'align-items': 'center', 'textAlign':'center',"height": "980px"}),
 
             ],justify="center", align="center", className="h-50"),
 
@@ -478,7 +471,7 @@ dbc.Accordion([
             html.Br(),
 
 
-        ], title = 'Dashboard de acompanhamento PEDEA - GoogleLookerStudio 🔎'),
+        ], title = 'Dashboard de acompanhamento PEDEA - GoogleLookerStudio 📑'),
 
 
 
