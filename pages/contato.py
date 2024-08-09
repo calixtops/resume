@@ -13,7 +13,7 @@ def layout():
     # dcc.Markdown('### FC Barcelona Forward', className='mb-5'),
     dcc.Markdown('### Informações Pessoais', style={'color':'gray'}),
     dcc.Markdown('Endereço', style=green_text),
-    dcc.Markdown('São Paulo, Brasil'),
+    dcc.Markdown('Fortaleza, Brasil'),
     dcc.Markdown('Número de Telefone', style=green_text),
     dcc.Markdown('+55 85 996564028'),
     dcc.Markdown('Email', style=green_text),
