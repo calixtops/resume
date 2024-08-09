@@ -168,7 +168,7 @@ layout = html.Div([
                          style={'white-space': 'pre'},
                          ),
             dcc.Markdown('''Constituição de uma start-up de tecnologia ambiental, promovido pelo Programa \
-                [Clusters Econômicos de Inovação](https://www.sedet.ce.gov.br/clusters-e-i-2/).''',
+                [Clusters Econômicos de Inovação](https://www.sct.ce.gov.br/corredoresdigitais/).''',
                 ),
 
             dcc.Markdown(
